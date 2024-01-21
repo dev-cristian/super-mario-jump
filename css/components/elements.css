@@ -1,0 +1,13 @@
+.logo {
+  padding: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.border {
+  width: 90%;
+  height: 510px;
+  right: 65px;
+  position: absolute;
+  z-index: 1;
+}
