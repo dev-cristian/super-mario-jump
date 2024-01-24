@@ -12,16 +12,14 @@
   width: 150px;
   bottom: 25px;
   position: absolute;
-}
-
-.jump {
-  animation: jump 500ms ease-out;
+  z-index: 1;
 }
 
 .pipe {
   width: 80px;
   bottom: 25px;
   position: absolute;
+  z-index: 1;
   animation: pipe-animation 2s infinite linear;
 }
 
@@ -37,5 +35,17 @@
   bottom: 0;
   left: 0;
   position: absolute;
-  background: url("/assets/grass.png") repeat-x;  
+  background: url("/assets/grass.png") repeat-x;
+}
+
+.jump {
+  animation: jump 500ms ease-out;
+}
+
+.game-over_screen {
+  top: 50%;
+  left: 50%;
+  display: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
