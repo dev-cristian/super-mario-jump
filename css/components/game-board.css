@@ -37,6 +37,5 @@
   bottom: 0;
   left: 0;
   position: absolute;
-  background: url("/assets/grass.png") repeat-x;
-  z-index: 0;
+  background: url("/assets/grass.png") repeat-x;  
 }

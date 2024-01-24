@@ -1,12 +1,14 @@
 .logo {
-  padding: 10px;
+  width: 200px;
+  padding: 5px;
+  left: 290px;
   position: relative;
-  text-align: center;
+  align-items: center;
 }
 
 .border {
   width: 90%;
-  height: 510px;
+  height: 512px;
   right: 65px;
   position: absolute;
   z-index: 1;
