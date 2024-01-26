@@ -1,8 +1,9 @@
 // Variables
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
-let score = 0;
-const gameOver = document.querySelector(".game-over_screen");
+const gameOverDisplay = document.querySelector(".game-over_screen");
+// const scoreDisplay = document.querySelector(".score");
+// let score = 0;
 
 // Add and remove jump
 const jump = () => {
@@ -20,9 +21,10 @@ const loop = setInterval(() => {
     .bottom.replace("px", "");
 
   if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
+    // increaseScore();
     pipe.style.animation = "none";
     pipe.style.left = `${pipePosition}px`;
-    game0ver();
+    gameOver();
 
     mario.style.animation = "none";
     mario.style.bottom = `${marioPosition}px`;
@@ -35,18 +37,22 @@ const loop = setInterval(() => {
   }
 }, 10);
 
-// Score
-
 // Game Over
-const game0ver = () => {
+const gameOver = () => {
   clearInterval(loop);
   pipe.style.animation = "none";
   mario.style.animation = "none";
   mario.scr = "assets/game-over.png";
   mario.style.width = "80px";
   mario.style.marginLeft = "50px";
-  gameOver.style.display = "block";
+  gameOverDisplay.style.display = "block";
 };
+
+// Score
+// const increaseScore = () => {
+//   score += 10;
+//   scoreDisplay.textContent = `Score: ${score}`;
+// };
 
 // Keydown event
 document.addEventListener("keydown", jump);
