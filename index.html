@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- FavIcon -->
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-    <!-- Title -->
-    <title>Super Mario Jump</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/extends.css" />
+    <!-- Title -->
+    <title>Super Mario Jump</title>
   </head>
   <body>
     <!-- Logo -->
@@ -24,12 +24,19 @@
 
     <!-- Game Board -->
     <div class="game-board">
+      <div class="score">Score: 0</div>
       <img src="assets/mario.gif" class="mario" />
       <img src="assets/pipe.png" class="pipe" />
-      <img src="assets/clouds.png" class="clouds" />
       <div class="grass"></div>
-      <img src="assets/game-over_screen.png" class="game-over_screen">
-      <!-- <div class="score">Score: 0</div> -->
+      <img src="assets/clouds.png" class="clouds" />
+      <img src="assets/game-over_screen.png" class="game-over_screen" />
+    </div>
+
+    <!-- Elements -->
+    <div class="game-elements">
+      <div class="start"></div>
+      <div class="restart"></div>
+      <audio class="jumpSound" src="assets/sound.mp3"></audio>
     </div>
 
     <!-- Script -->
